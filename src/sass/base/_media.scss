@@ -1,8 +1,83 @@
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .container {
-    width: 96%;
+    width: 720px;
   }
+  .preferences {
+    &__item {
+      width: 220px !important;
+    }
+  }
+  .promo {
+    .button_main {
+      width: 280px;
+    }
+  }
+  .consultation {
+    .title_left {
+      font-size: 32px;
+    }
+  }
+}
 
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .promo {
+    .header {
+      &__logo {
+        width: 170px !important;
+      }
+      &__official {
+        span {
+          font-size: 17px !important;
+        }
+      }
+      &__phone {
+        font-size: 16px !important;
+      }
+      .button {
+        width: 135px;
+        font-size: 11px;
+      }
+    }
+    &__wrapper {
+      align-items: center !important;
+      .button_main {
+        font-size: 15px;
+      }
+    }
+  }
+  .preferences {
+    &__item {
+      width: 170px !important;
+      h4 {
+        font-size: 15px !important;
+      }
+      p {
+        font-size: 13px !important;
+      }
+    }
+  }
+  .consultation {
+    min-height: 550px !important;
+    padding-top: 60px !important;
+    .title_left {
+      font-size: 25px;
+    }
+    .feed-form {
+      width: 280px;
+      .button_submit {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
   .promo {
     padding-bottom: 30px !important;
     .header {
@@ -21,7 +96,6 @@
         margin-top: 15px;
       }
     }
-
     &__header {
       align-self: flex-start;
       font-size: 35px;
@@ -45,7 +119,6 @@
       width: 230px;
     }
   }
-
   .preferences {
     padding-top: 25px !important;
     padding-bottom: 30px !important;
@@ -66,6 +139,31 @@
       }
       p {
         margin-top: 0 !important;
+      }
+    }
+  }
+  .consultation {
+    min-height: 480px !important;
+    padding-top: 38px !important;
+    padding-bottom: 60px !important;
+    .title_left {
+      text-align: center;
+      font-size: 21px;
+    }
+    &__descr {
+      text-align: center;
+      font-size: 15px !important;
+    }
+    .feed-form {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 240px;
+      input {
+        height: 44px;
+      }
+      .button_submit {
+        height: 48px;
+        font-size: 14px;
       }
     }
   }
