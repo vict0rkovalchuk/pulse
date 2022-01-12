@@ -4,6 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const ghPages = require('gulp-gh-pages');
 
 // Static server
 gulp.task('server', function () {
@@ -33,6 +34,10 @@ gulp.task('styles', function () {
 gulp.task('watch', function () {
   gulp.watch('src/sass/**/*.+(scss|sass)', gulp.parallel('styles'));
   gulp.watch('src/*.html').on('change', browserSync.reload);
+});
+
+gulp.task('deploy', function () {
+  return gulp.src('./src/**/*').pipe(ghPages());
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
