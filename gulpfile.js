@@ -37,7 +37,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('deploy', function () {
-  return gulp.src('./src/**/*').pipe(ghPages());
+  return gulp.src('/src/**/*').pipe(ghPages());
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
