@@ -17,6 +17,14 @@
       font-size: 32px;
     }
   }
+  .carousel {
+    &__inner {
+      width: 100% !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {

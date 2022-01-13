@@ -8,7 +8,7 @@ $(document).ready(function () {
       '<button type="button" class="slick-next"><img src="icons/arrows/right.svg"></button>',
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 993,
         settings: {
           dots: true,
           arrows: false
