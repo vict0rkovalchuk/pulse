@@ -25,6 +25,11 @@
       }
     }
   }
+  .catalog {
+    &__content {
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -77,6 +82,30 @@
       width: 280px;
       .button_submit {
         font-size: 15px;
+      }
+    }
+  }
+  .catalog {
+    &__tab {
+      width: 160px !important;
+      font-size: 17px !important;
+    }
+    &-item {
+      width: 258px !important;
+      &__descr {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      &__price {
+        font-size: 18px !important;
+      }
+      .button_mini {
+        width: 98px;
+        height: 38px;
+        font-size: 13px;
+      }
+      &__list li {
+        font-size: 13px !important;
       }
     }
   }
@@ -173,6 +202,18 @@
         height: 48px;
         font-size: 14px;
       }
+    }
+  }
+  .catalog {
+    .title {
+      font-size: 23px;
+    }
+    &__tab {
+      width: 86px !important;
+      font-size: 9px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
