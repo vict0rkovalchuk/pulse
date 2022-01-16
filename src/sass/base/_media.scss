@@ -109,6 +109,19 @@
       }
     }
   }
+  .feedbacks {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__descr {
+      margin-top: 20px;
+      margin-left: 0 !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -205,6 +218,7 @@
     }
   }
   .catalog {
+    padding-bottom: 35px !important;
     .title {
       font-size: 23px;
     }
@@ -214,6 +228,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+  .feedbacks {
+    &__descr {
+      padding: 0 8px;
+    }
+    &__feedback {
+      font-size: 14px !important;
     }
   }
 }
