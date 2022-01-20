@@ -152,13 +152,16 @@
           left: -14px;
           top: 7px;
         }
+        &:last-child::before {
+          display: none;
+        }
       }
     }
     &__back {
       position: absolute;
-      bottom: 0;
+      bottom: -50px;
       left: 50%;
-      transform: translateX(calc(-50% - 19px));
+      transform: translateX(calc(-50% - 10px));
       display: block;
       color: $main-color;
       font-size: 14px;
